@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Progress from './pages/Progress';
 import Settings from './pages/Settings';
 import AddHabit from './pages/AddHabit';
+import Chat from './pages/Chat';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="max-w-[1200px] mx-auto px-8 pb-8 w-full">
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/chat" element={<Chat />} />
           <Route path="/login" element={<Login />} />
           <Route path="/progress" element={<Progress />} />
           <Route path="/settings" element={<Settings />} />
