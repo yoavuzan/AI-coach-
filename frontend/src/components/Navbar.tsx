@@ -7,6 +7,7 @@ const Navbar: React.FC = () => {
       <div className="font-bold text-lg text-[#646cff]">Habit Coach</div>
       <div className="flex gap-6">
         <Link to="/" className="text-white hover:text-[#646cff] no-underline text-sm transition-colors">Dashboard</Link>
+        <Link to="/chat" className="text-white hover:text-[#646cff] no-underline text-sm transition-colors">AI Coach</Link>
         <Link to="/progress" className="text-white hover:text-[#646cff] no-underline text-sm transition-colors">Progress</Link>
         <Link to="/add-habit" className="text-white hover:text-[#646cff] no-underline text-sm transition-colors">Add Habit</Link>
         <Link to="/login" className="text-white hover:text-[#646cff] no-underline text-sm transition-colors">Login</Link>

@@ -1,9 +1,7 @@
 import React from 'react';
 import HabitCard from '../components/HabitCard';
-import CoachChat from '../components/CoachChat';
 import CalendarSync from '../components/CalendarSync';
 import WeeklyReport from '../components/WeeklyReport';
-import VoiceButton from '../components/VoiceButton';
 import { useHabitStore } from '../store/habitStore';
 
 const Dashboard: React.FC = () => {
@@ -28,12 +26,6 @@ const Dashboard: React.FC = () => {
       <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 w-full mt-12">
         <CalendarSync />
         <WeeklyReport />
-      </div>
-
-      <CoachChat />
-
-      <div className="fixed bottom-8 right-8 z-[1000]">
-        <VoiceButton />
       </div>
     </div>
   );
