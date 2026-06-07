@@ -22,11 +22,6 @@ class User(Base):
         cascade="all, delete"
     )
 
-    triggers: Mapped[list["Trigger"]] = relationship(
-        back_populates="user",
-        cascade="all, delete"
-    )
-
     calendar_events: Mapped[list["CalendarEvent"]] = relationship(
         back_populates="user",
         cascade="all, delete"

@@ -41,3 +41,9 @@ class Habit(Base):
         back_populates="habit",
         cascade="all, delete"
     )
+
+    # add to Habit model
+    triggers: Mapped[list["Trigger"]] = relationship(
+        back_populates="habit",
+        cascade="all, delete"
+    )

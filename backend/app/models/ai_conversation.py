@@ -16,7 +16,7 @@ class AIConversation(Base):
     id:         Mapped[int] = mapped_column(
         Integer, primary_key=True, autoincrement=True)
     habit_id:   Mapped[int] = mapped_column(
-        ForeignKey("habits.id"), nullable=True)
+        ForeignKey("habits.id"), nullable=False)
     title:      Mapped[Optional[str]] = mapped_column(String(300))
     created_at: Mapped[datetime] = mapped_column(
         DateTime, default=datetime.utcnow)
